@@ -1,4 +1,4 @@
-package com.bogdan.config;
+package com.autolearning.config;
 
 import io.github.bonigarcia.wdm.ChromeDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan("com.bogdan")
+@ComponentScan("com.autolearning")
 public class CucumberConfiguration {
 
     @Bean

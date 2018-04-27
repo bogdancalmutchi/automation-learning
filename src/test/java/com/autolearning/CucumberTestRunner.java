@@ -1,4 +1,4 @@
-package com.bogdan;
+package com.autolearning;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.SnippetType;
@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         format = {"pretty", "html:target/cucumber/output/myauto"},
         snippets = SnippetType.CAMELCASE,
         features = "src/test/resources/features",
-        glue = "com.bogdan.steps"
+        glue = "com.autolearning.steps"
 )
 public class CucumberTestRunner {
 }
