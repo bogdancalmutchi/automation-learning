@@ -1,6 +1,8 @@
 package com.autolearning.pages;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 
@@ -17,5 +19,12 @@ public class BasePage {
         driver.get(rootUrl);
     }
 
+    public void fillInText(WebElement element, String input) {
+        element.sendKeys(input);
+    }
+
+    public void pressEnter(WebElement element) {
+        element.sendKeys(Keys.ENTER);
+    }
 
 }

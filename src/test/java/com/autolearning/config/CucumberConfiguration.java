@@ -14,7 +14,7 @@ public class CucumberConfiguration {
 
     @Bean
     public WebDriver driver() {
-        ChromeDriverManager.getInstance().setup();
+        ChromeDriverManager.getInstance().version("2.36").setup();
 
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("disable-infobars");
