@@ -10,7 +10,8 @@ import org.junit.runner.RunWith;
         format = {"pretty", "html:target/cucumber/output/myauto"},
         snippets = SnippetType.CAMELCASE,
         features = "src/test/resources/features",
-        glue = "com.autolearning.steps"
+        glue = "com.autolearning.steps",
+        tags = "@Olx"
 )
 public class CucumberTestRunner {
 }

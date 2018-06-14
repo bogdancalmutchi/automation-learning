@@ -11,12 +11,10 @@ public class GoogleSearchPage extends BasePage {
 
     public void searchForItem(String item) {
         fillInText(driver.findElement(searchBarField), item);
-
     }
 
     public void pressEnterKey() {
         pressEnter(driver.findElement(searchBarField));
     }
-
 
 }
